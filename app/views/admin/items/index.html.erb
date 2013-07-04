@@ -1,0 +1,22 @@
+<h1>Listing items</h1>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Path</th>
+    <th>Title</th>
+    <th>Desc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <%= render @items %>
+  <tr>
+    <td><%= paginate @items %></td>
+  </tr>
+</table>
+
+<br />
+
+<%= link_to 'New Item', new_item_path %>

@@ -1,0 +1,81 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	/* IE10 Consumer Preview */
+	background-image: -ms-radial-gradient(center, circle closest-corner, #282923 0%, #000000 100%);
+	/* Mozilla Firefox */
+	background-image: -moz-radial-gradient(center, circle closest-corner, #666666 0%, #333333 100%);
+	/* Opera */
+	background-image: -o-radial-gradient(center, circle closest-corner, #666666 0%, #333333 100%);
+	/* Webkit (Safari/Chrome 10) */
+	background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #666666), color-stop(1, #333333));
+	/* Webkit (Chrome 11+) */
+	background-image: -webkit-radial-gradient(center, circle closest-corner, #666666 0%, #333333 100%);
+	/* W3C Markup, IE10 Release Preview */
+	background-image: radial-gradient(circle closest-corner at bottom, #444444 0%, #000000 100%);
+	margin-top: 50px;
+
+	color: white;
+}
+
+div#side_navi {
+	float: left;
+	width: 300px;
+	height: 100%;
+}
+
+div#content {
+	width: 900px;
+	margin: auto;
+	height: 100%;
+}
+
+div#paginator > a {
+	font-size: 4em;
+	text-shadow: 0 3px 3px #777;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+table {
+	border: 0;
+	text-align: center;
+}
+
+ul {
+		list-style:inside none; padding:0; margin:0;
+}
+
+a {
+    color: #AAA;
+}
+
+div#photo_item {
+	border: 0;
+	display: inline-block;
+	overflow: visible;
+	vertical-align: top;
+	width: 144px;
+	height: 144px;
+	padding: 0;
+	float: left;
+	min-height: 0px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	background: none;
+	position: relative;
+
+
+}
+
+div#photo_item img {
+	position: relative;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border-radius: 5%;
+	-webkit-box-shadow: 0px 0px 7px 3px rgba(77, 77, 77, 0.5);
+	box-shadow: 0px 0px 7px 3px rgba(77, 77, 77, 0.5);
+}
+

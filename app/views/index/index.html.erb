@@ -1,0 +1,30 @@
+<table>
+	<tr>
+		<td>
+			<div id="photos">
+				<% @items.each do |item| %>
+					<%= render partial: 'item', :locals => {:item => item} %>
+				<% end %>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div id="paginator"><%= link_to_previous_page @items, '<' %><%= link_to_next_page @items, '>' %></div></td>
+	</tr>
+</table>
+
+<script>
+	$('#photo_item a').touchTouch();
+	$(document).ready(function() {
+    	$images = $("#thumbs a");
+    	$images.hide().first().show();
+    	$small_images = $('#thumbs_small img');
+    	$small_images.on('mouseover', function(e) {
+        	$small_images.each(function(index) {
+            	if (this == e.currentTarget) $images.hide().eq(index).show();
+        	});
+    	});
+	});
+</script>
+
+
