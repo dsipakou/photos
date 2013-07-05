@@ -14,6 +14,8 @@ Photos::Application.routes.draw do
 
   root to: 'index#index', as: :main
 
+  match "photo/:id", to: "photos#photo", as: :photo
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
