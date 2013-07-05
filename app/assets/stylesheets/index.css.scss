@@ -13,10 +13,12 @@ body {
 	/* Webkit (Chrome 11+) */
 	background-image: -webkit-radial-gradient(center, circle closest-corner, #666666 0%, #333333 100%);
 	/* W3C Markup, IE10 Release Preview */
-	background-image: radial-gradient(circle closest-corner at bottom, #444444 0%, #000000 100%);
+	background-image: radial-gradient(circle closest-corner at center, #444444 0%, #000000 100%);
 	margin-top: 50px;
 
 	color: white;
+
+	height: 100%;
 }
 
 div#side_navi {
