@@ -1,5 +1,9 @@
 Photos::Application.routes.draw do
 
+  devise_for :users do
+      get "admin/login", to: "devise/sessions#new", as: :login
+      get "admin/logout", to: "devise/sessions#destroy", as: :logout
+  end
 
   namespace :admin do
     resources :items

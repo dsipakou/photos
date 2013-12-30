@@ -41,3 +41,5 @@ gem 'mysql2'
 gem 'kaminari'
 
 gem "paperclip", "~> 3.0"
+
+gem "devise"
